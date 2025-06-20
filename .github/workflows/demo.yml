@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out Github Actions
 on: [push]
 jobs:
   Explore-Github-Actions:
-    runs-on: ubi8
+    runs-on: ubuntu-latest
     steps:
       - run: echo "github.event_name = ${{ github.event_name }}"
       - run: echo "runner.os = ${{ runner.os }}"
